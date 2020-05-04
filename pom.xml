@@ -18,6 +18,14 @@
     <url>http://www.yinlz.com</url>
     <description>
         构建sso单点登录项目
+        子系统客户端:
+        #认证成功后跳转的url,若是不填写的话,那就是事先访问的url认证后跳转到原访问的URL
+        registered-redirect-uri:
+
+        认证中心:
+        //加上验证后回调地址???若是客户端不填写的话,那就是事先访问的url认证后跳转到原访问的URL
+        .autoApprove(true)
+        .redirectUris("http://localhost:8086/login")
     </description>
 
   <properties>
